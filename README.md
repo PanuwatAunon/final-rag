@@ -5,18 +5,18 @@
 
 ```
 starter/
-├── core/          🔒 ห้ามแก้ (ระบบส่งงานตรวจ checksum ถ้าถูกแก้จะไม่รับงาน)
-├── Dockerfile     🔒 ห้ามแก้
-├── student/       ✏️ เขียนโค้ดที่นี่ ค้นหาคำว่า TODO HERE
+├── core/          
+├── Dockerfile      ห้ามแก้
+├── student/       เขียนโค้ดที่นี่ ค้นหาคำว่า TODO HERE
 │   ├── chunking.py    1. แบ่งเอกสารเป็นชิ้น
 │   ├── embedding.py   2. แปลงข้อความเป็น vector
 │   ├── retrieval.py   3. ค้นหาชิ้นที่เกี่ยวข้องกับคำถาม
 │   ├── prompts.py     4. prompt สำหรับตอบข้อสอบ และเขียนโค้ด
 │   └── settings.py    ค่าที่ปรับจูนได้ (ขนาด chunk, top-k, hybrid …)
-├── manifest.json  ✏️ ใส่รหัสนักศึกษาและชื่อ
-├── requirements.txt ✏️ เพิ่ม library ได้ (ห้ามลบของเดิม)
+├── manifest.json   ใส่รหัสนักศึกษาและชื่อ
+├── requirements.txt  เพิ่ม library ได้ (ห้ามลบของเดิม)
 └── tools/
-    ├── doctor.py      🩺 ตรวจทุกอย่างก่อนส่ง แล้วสร้าง zip ให้
+    ├── doctor.py       ตรวจทุกอย่างก่อนส่ง แล้วสร้าง zip ให้
     ├── selfcheck.py   ทดสอบ API กับชุดตัวอย่าง
     └── pack.py        สร้าง zip (doctor เรียกให้อัตโนมัติ)
 ```
